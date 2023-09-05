@@ -30,6 +30,14 @@ The output of the script should look like follows:
 If you get this output, then the script is working and you can process real sequencing data.
 In case of any problems with the script or any questions, please write to chanishq@gmail.com
 
+The script is able to work in several modes. 
+If the folder contains the data of several samples, the script processes each one in turn, prints name of fastq file, possible errors during data processing, resulting consensus sequence, coverage, and HBV genotype.
+Also the script creates fasta file "Fasta_out.fa" containing consensus sequences and names. In addition, the script creates file "HBV_statistics.txt", containig data from console: names, genotypes, subtypes, consensus sequences, and coverages.
+
+If the folder contains the data of one sample (for example HBV-training_R1_001.fastq.gz and HBV-training_R2_001.fastq.gz) the script asks if there is an amplicon of interest.
+If answer is no (press Enter) the script assembles one sample as usual.
+If answer is yes (input amplicon number) the script processes only amplicon of interest and prints consensus of forward reads, consensus of reverse reads and resulting consensus.
+Also script asks to print 20 random forward or reverse reads so user may look at raw data.
 
 ## Samples_001:003 data
 Sequencing data of the three samples described in the paper can be downloaded from the following links:
