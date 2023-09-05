@@ -26,7 +26,7 @@ if len(FileNames) == 1:
     if Amplicon_query != '': Amplicon_query = int(Amplicon_query)
 
 FileOut = open('HBV_statistics.txt','w')      #file for statistics output
-FileOut.write('Sample_Name,Genotype,Subtype,Seq,Coverage,A1,A2,A3,A4,A5,A6,A7,A8,A9,A10,A11,A12,A13,A14,A15,A16,A17,A18,A19,A20\n')
+FileOut.write('Sample_Name,Genotype,Subtype,Seq,Coverage\n')
   
 FastaOut = open('Fasta_out.fa','w')           #file for HBV consensus output 
 
@@ -448,7 +448,6 @@ for FileName in FileNames:
 
     S = FileName+','+Genotype_letters[True_genotype]+','+Genotype_exact
     S += ','+R+','+str(100*len(R.replace('-',''))/len(ref))+','
-    for Percent in MATRIX_PERCENT[True_genotype]: S += str(Percent)+','
    
     S = S[:-1]
 
