@@ -1,8 +1,11 @@
 # HBV sequencing panel
-Present script is written to process data obtained by the NGS amplification panel for sequencing the hepatitis B virus.
-The details of library preparation are described in the paper in Virologica Sinica.
 Hepatitis B virus (HBV) remains a pressing global public health concern. The clinical course of the disease, particularly its tendency towards chronicity and response to therapy, is significantly influenced by the HBV genotype and specific mutations.
 The HBV panel developed for simple and robust sequencing of hepatitis B virus holds immense potential for utilization in research, epidemiological monitoring, and the advancement of personalized medicine approaches.
+Present script is written to process data obtained by the NGS amplification panel for sequencing the hepatitis B virus.
+
+The details of library preparation are described in the paper in Virologica Sinica.
+
+Being placed in one folder with the raw NGS data, the script assembles HBV genomes and analyzes data. The script can be run from any Python IDE or from the command line in any operation system; it does not require the installation of any other programs other than Python packages BioPython, Levenshtein, Numpy, fastq. The use of the script does not require any knowledge in the field of programming and bioinformatics. At the same time, the script can be easily modified to work with another fasta file and other primers. 
 
 ## Usage
 Check you have Python and modules Biopython, numpy, fastq, Levenshtein installed.
