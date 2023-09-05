@@ -1,4 +1,8 @@
 # HBV sequencing panel
+Present script is written to process data obtained by the NGS amplification panel for sequencing the hepatitis B virus.
+The details of library preparation are described in the paper in Virologica Sinica.
+Hepatitis B virus (HBV) remains a pressing global public health concern. The clinical course of the disease, particularly its tendency towards chronicity and response to therapy, is significantly influenced by the HBV genotype and specific mutations.
+The HBV panel developed for simple and robust sequencing of hepatitis B virus holds immense potential for utilization in research, epidemiological monitoring, and the advancement of personalized medicine approaches.
 
 ## Usage
 Check you have Python and modules Biopython, numpy, fastq, Levenshtein installed.
